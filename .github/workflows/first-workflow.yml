@@ -1,0 +1,13 @@
+name: first-workflow
+on: [push] ### push 이벤트가 발생하면 트리거됨
+
+jobs:
+  shell-cmd-job:
+    runs-on: ubuntu-latest ### 우분투 이미지를 사용
+    steps:
+      - name: echo Hello
+        run: echo "Hello World"
+      - name: multiple line cmd
+        run: | ### 파이프 뒤에는 여러 행이더라도 하나의 덩어리처럼 수행
+          node -v
+          npm -v
