@@ -1,0 +1,13 @@
+name: first-excercise-workflow
+on:
+  push:
+  pull_request:
+
+jobs:
+  shell-cmd-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: python/pip Version Check
+        run: |
+          python --version
+          pip --version
