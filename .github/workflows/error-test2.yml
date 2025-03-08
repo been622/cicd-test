@@ -1,8 +1,8 @@
-name: Workflow Commands
+name: Workflow Commands2
 on: [push]
 
 jobs:
-  testing-wf-commands:
+  testing-wf-commands2:
     runs-on: ubuntu-latest
     steps:
       - name: Setting an error message
